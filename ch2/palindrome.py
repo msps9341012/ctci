@@ -30,22 +30,20 @@ def palindrome(ll):
 	return True
 
 l=SingleLinkedList()
-l.add_list_item('a')
-l.add_list_item('b')
-l.add_list_item('c')
-l.add_list_item('c')
-l.add_list_item('c')
-l.add_list_item('a')
+l.add_list_item('1')
+l.add_list_item('1')
+l.add_list_item('2')
+l.add_list_item('1')
+
 l.printall()
 
 r=reverse(l)
 tmp=""
 node=r
 while node is not None:
-	tmp=tmp+str(r.data)+'->'
+	tmp=tmp+str(node.data)+'->'
 	node=node.next
 print(tmp[:-2])
-l.printall()
 
 
 

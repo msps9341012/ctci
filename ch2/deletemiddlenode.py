@@ -8,7 +8,7 @@ def deletemiddlenode(node):
 	#直接蓋過去
 	next=node.next
 	node.data=next.data
-	node.next=node.next.next 
+	node.next=next.next 
 	return True
 
 
@@ -17,9 +17,7 @@ l.add_list_item(1)
 l.add_list_item(2)
 l.add_list_item(3)
 l.add_list_item(4)
-l.add_list_item(5)
-l.add_list_item(6)
-l.add_list_item(7)
+
 
 l.printall()
 #print(returnkthtolast(l,4))

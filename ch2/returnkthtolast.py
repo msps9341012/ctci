@@ -1,4 +1,7 @@
 from linkedlist import SingleLinkedList
+# !/usr/bin/python
+
+# coding:utf-8
 
 def returnkthtolast(ll,k):
 	runner=ll.root
@@ -21,14 +24,15 @@ def returnkthtolast_recursive(node,k):
 	return index
 l=SingleLinkedList()
 l.add_list_item(2)
-l.add_list_item(3)
+'''
+l.add_list_item(8)
 l.add_list_item(1)
 l.add_list_item(3)
 l.add_list_item(1)
 l.add_list_item(1)
 l.add_list_item(5)
-
+'''
 l.printall()
-#print(returnkthtolast(l,4))
-returnkthtolast_recursive(l.root,4)
+print(returnkthtolast(l,1))
+#returnkthtolast_recursive(l.root,4)
 
